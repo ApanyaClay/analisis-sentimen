@@ -42,7 +42,7 @@ Pastikan Anda sudah menginstall **Docker** dan **Docker Compose** di komputer An
 ### 1. Clone Repository
 
 ```bash
-git clone [https://github.com/username-anda/nama-repo.git](https://github.com/username-anda/nama-repo.git)
+git clone [https://github.com/ApanyaClay/analisis-sentimen.git](https://github.com/ApanyaClay/analisis-sentimen.git)
 cd nama-repo
 
 ```
