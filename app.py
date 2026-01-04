@@ -26,12 +26,11 @@ model_gemini = genai.GenerativeModel('gemini-2.5-flash')
 @st.cache_resource
 def load_sentiment_model():
     """
-    Memuat model Bi-LSTM dan Tokenizer yang sudah dilatih.
-    Sesuaikan path file dengan file lokal kamu.
+    Memuat model Bi-LSTM (.keras) dan Tokenizer (.pickle).
     """
     try:
-        # Ganti 'model_bilstm.h5' dengan path model kamu
-        model = tf.keras.models.load_model('model_bilstm.h5') 
+        # Ganti 'model_bilstm.keras' dengan path model kamu
+        model = tf.keras.models.load_model('model_bilstm.keras') 
         
         # Ganti 'tokenizer.pickle' dengan path tokenizer kamu
         with open('tokenizer.pickle', 'rb') as handle:
