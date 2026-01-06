@@ -7,10 +7,12 @@
 
 Dashboard interaktif untuk menganalisis sentimen ulasan film secara *real-time*. Aplikasi ini mengambil ulasan terbaru dari **TMDB**, memprediksi sentimen (Positif/Negatif) menggunakan model Deep Learning **Bi-LSTM**, dan memberikan ringkasan kritik cerdas menggunakan **Google Gemini AI**.
 
+> **Catatan Pengembangan:** Anda dapat melihat proses pelatihan model, *preprocessing*, dan evaluasi model Bi-LSTM melalui notebook Google Colab berikut: [Buka Notebook Pelatihan](https://colab.research.google.com/drive/1avv22lTcb8AkLCsFUFfV75sQau7sEeNm).
+
 ## ✨ Fitur Utama
 * **Pencarian Film Real-time**: Terintegrasi dengan TMDB API.
 * **Deep Learning Sentiment Analysis**: Menggunakan model Bi-LSTM custom untuk mengklasifikasikan review.
-* **AI Summary**: Menggunakan **Gemini 1.5 Flash** untuk merangkum poin kritik dan pujian dari ratusan review.
+* **AI Summary**: Menggunakan **Gemini 3.0 Flash** untuk merangkum poin kritik dan pujian dari ratusan review.
 * **Visualisasi Data**: Menampilkan grafik Pie Chart perbandingan sentimen.
 * **Containerized**: Siap dijalankan di mana saja menggunakan Docker.
 
@@ -42,8 +44,8 @@ Pastikan Anda sudah menginstall **Docker** dan **Docker Compose** di komputer An
 ### 1. Clone Repository
 
 ```bash
-git clone [https://github.com/ApanyaClay/analisis-sentimen.git](https://github.com/ApanyaClay/analisis-sentimen.git)
-cd nama-repo
+git clone https://github.com/ApanyaClay/analisis-sentimen.git
+cd analisis-sentimen
 
 ```
 
